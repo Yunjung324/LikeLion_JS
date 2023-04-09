@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 10;
+        let y = 20;
+
+        x = x + 10;
+    </script>
+    <script>
+        // let x = 100;  //재정의를 허락하지 않음
+        //1000줄의 코드
+        console.log(x);
+        console.log(y);
+
+        //즉, var로 선언하면 javascript파일을 두개 이상 연결하고, 중복되는 var의 변수명이 존재하는 경우에
+        //뒤의 js 파일에 나오는 var로 덮어 씌워지게 됨 -> 문제 발생
+        //script는 다른 태그에 있어도 변수를 공유합니다. var로 선언할 경우 덮어써서 견고한 코드를 작성하는데 방해가 됩니다. 
+    </script>
+</body>
+</html>

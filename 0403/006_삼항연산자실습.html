@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //3항 연산자 실습
+        //통장에 10000원 이상 있으면 부자
+        let money = 1000000
+        const message = ((money > 10000) ? '부자' : '부를 바라는 자')
+        console.log(message)
+
+        const money1 = 1000
+        const now = ((money1 > 100000) ? '초부자' : (money1 > 10000) ? '부자' : '부를 바라는 자')
+        console.log(now)
+    </script>
+    
+</body>
+</html>

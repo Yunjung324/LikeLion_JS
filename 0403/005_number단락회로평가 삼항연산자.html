@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //단락회로평가(***)
+        //true : 1
+        //false : 0
+        //and(&&) : 곱
+        //or(||) : 합
+        //not(!) : 부정
+        console.log(!'false'); //false(문자열이기 때문에)
+        console.log(!"0"); //마찬가지로 문자열이기 때문에 false
+        console.log(!false) //true
+        console.log(!0) //true
+
+        console.log('abc'/2) //NaN
+
+        console.log(!!NaN)
+        console.log(!!undefined)
+        console.log(!!null) //전부 다 false, 느낌표 두개 쓰면 true false로 반환됨.
+
+        let username = "";
+        username = username || "이름을 입력하지 않으신 분"
+        console.log(username); //이름을 입력하지 않으신 분
+
+        let username1 = "윤정";
+        username1 = username1 || "이름을 입력하지 않으신 분"
+        console.log(username1); //윤정
+        // ||뒤에 나오는 것을 봐야하는지 안봐야하는지 
+
+        //3항 연산자
+        // const sale = true;
+        // price = sale ? 100 : 200;
+        // console.log(price);
+
+        const price = 7000;
+        const message = price > 5000 ? '비싸다' : '괜찮다'
+        console.log(message)
+
+        //9000원 이상이면 비싸다
+        //9000원 미만이고 7000원 이상이면 적절하다
+        //7000원 미만이면 저렴하다
+        const price1 = 7500
+        const message1 = (price >= 9000) ? '비싸요' : ((price >= 7000) ? '적절해요' : '저렴해요')
+
+
+        //드모르간 법칙
+        //헷갈리는 연산 모음
+    </script>
+</body>
+</html>
