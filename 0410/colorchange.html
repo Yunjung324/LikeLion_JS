@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width : 150px;
+            height : 150px;
+            background-color: black;
+        }
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: red;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        ul{
+            display: flex;
+            gap: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "box"></div>
+    <ul>
+        <li><button type="button" class = "btn-red">빨강</button></li>
+        <li><button type = "button" class = "btn-yellow">노랑</button></li>
+        <li><button type = "button" class = "btn-green">초록</button></li>
+    </ul>
+    <script>
+        const box = document.querySelector('.box');
+        const redBtn = document.querySelector('.btn-red')
+        const greenBtn = document.querySelector('.btn-green')
+        const yellowBtn = document.querySelector('.btn-yellow')
+        redBtn.addEventListener('click', function(){
+            box.classList.toggle('red')
+        })
+        greenBtn.addEventListener('click', function(){
+            box.classList.toggle('green')
+        })
+        yellowBtn.addEventListener('click', function(){
+            box.classList.toggle('yellow')
+        })
+    </script>
+</body>
+</html>

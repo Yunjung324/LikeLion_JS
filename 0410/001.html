@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>Hello</p>
+    <p>Hello</p>
+    <p id = "myTxt">Hello</p>
+    <p class = "txt1">Hello</p>
+    <p class = "txt1">Hello</p>
+    <script>
+        console.log(document.getElementById('myTxt'))
+        console.log(document.getElementsByTagName('p'))
+        console.log(document.getElementsByClassName('txt1'))
+
+        const element = document.getElementsByClassName('txt1')  //변수에 넣어서 활용하기
+    </script> -->
+    점심 식단
+    <article id="container">
+        <ul>
+            <li>탕수육</li>
+            <li class="item-second">유산슬</li>
+            <li>짜장면</li>
+        </ul>
+    </article>
+    저녁 식단
+    <article>
+        <ul>
+            <li>된장국</li>
+            <li class="item-second">김치찌개</li>
+            <li>해장국</li>
+        </ul>    
+        <!-- 객체 형태로 데이터가 저장됨, arraylike(?) -->
+    </article>
+    <script>
+        const container = document.getElementById('container');
+
+        // 자주 사용하지 않음
+        console.log(document.getElementsByTagName('li')[0]);
+        console.log(document.getElementsByClassName('item-second')[0]);
+
+        //많이 사용
+        document.querySelector('#container');
+        document.querySelectorAll('li');
+        document.querySelector('li:last-child')
+
+        const listItem = document.createElement('li');
+        container.append(listItem);
+        
+        //지우기
+        const target = document.querySelector('.item-second');
+        target.remove();
+
+        //text 바꾸기
+        container.querySelector('.item-second').textContent = "라조기";
+
+        container.querySelector('.item-second').classList.add('new');
+    </script>
+</body>
+</html>
