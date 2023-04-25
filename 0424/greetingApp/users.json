@@ -1,0 +1,16 @@
+{
+    "user" : [
+        {
+            "userName" : "yunjung",
+            "password" : "luny"
+        },
+        {
+            "userName" : "jyeomi",
+            "password" : "hi"
+        },
+        {
+            "userName" : "cat",
+            "password" : "meow"
+        }
+    ]
+}
